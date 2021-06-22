@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+  .container{
+    padding: 3%; width: 35%;
+  }
+  .listuser{
+    text-decoration: none; 
+    color: gray;
+  }
+  .list{
+    font-weight: bold;
+  }
+
+</style>
+<body>
+    <div class="container mt-5 shadow-lg p-3 mb-5 bg-body rounded">
+      <center>
+        <h3>Thank you for visiting us!</h3>
+      </center>
+        <div>
+          <span class="list">Mobile Phone: </span> <span th:text="${user.phone}"></span>
+        </div>
+        <div>
+            <span class="list" >Visitor Members: </span> <span th:text="${user.members}"></span>
+          </div>
+        <div>
+          <span class="list" >Date of Visiting: </span> <span th:text="${user.visit}"></span>
+        </div>
+        <div>
+          <span class="list" >Date of Exiting: </span> <span th:text="${user.exit}"></span>
+        </div>
+        <a href="http://localhost:8080/listuser" class="listuser">Click here to List the User</a>
+
+    </div>
+
+
+</body>
+</html>
