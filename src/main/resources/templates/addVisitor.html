@@ -23,11 +23,6 @@
   }
 </style>
 <body>
-  <!-- int id;
-  String phonenum;
-  int member;
-  Date visitDate;
-  Date exitDate; -->
     <div class="container mt-5 shadow-lg p-3 mb-5 bg-body rounded">
           <h3>Visitor Registration</h3>
         <form  method="POST" id="form" >
@@ -63,12 +58,6 @@
             visit: formData.get("visit"),
             exit: formData.get("exit")
           })
-          console.log(response.data)
-          // if(response.data.length>0){
-          //   window.location.pathname="/listvisitor";
-          // }else{
-          //   console.log(response.data);
-          // }
         }
       }
       addData()
